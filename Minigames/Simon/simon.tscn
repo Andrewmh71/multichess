@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://ct8cnairyd730"]
+
+[ext_resource type="Script" path="res://Minigames/Simon/simon.gd" id="1_ia4mo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mm4ks"]
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_qdclm"]
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_mas4u"]
+font_size = 10
+
+[node name="Simon" type="Node2D"]
+script = ExtResource("1_ia4mo")
+minigame_size = Vector2(154, 300)
+metadata/_edit_horizontal_guides_ = [116.0, -31.0, 36.0, 302.0]
+metadata/_edit_vertical_guides_ = [77.0, -81.0, -65.0]
+
+[node name="SequenceLabel" type="RichTextLabel" parent="."]
+offset_left = 2.0
+offset_top = 22.0
+offset_right = 177.0
+offset_bottom = 47.0
+scroll_active = false
+metadata/_edit_use_anchors_ = true
+
+[node name="InputTimerBar" type="ProgressBar" parent="."]
+offset_left = 25.0
+offset_top = 183.0
+offset_right = 129.0
+offset_bottom = 210.0
+metadata/_edit_use_anchors_ = true
+
+[node name="DifficultyProgressBar" type="ProgressBar" parent="."]
+visible = false
+offset_left = 26.0
+offset_top = 250.0
+offset_right = 128.0
+offset_bottom = 277.0
+metadata/_edit_use_anchors_ = true
+
+[node name="RoundTimer" type="ProgressBar" parent="."]
+offset_left = 28.0
+offset_top = 184.0
+offset_right = 127.0
+offset_bottom = 211.0
+metadata/_edit_use_anchors_ = true
+
+[node name="DifficultyLabel" type="Label" parent="."]
+visible = false
+offset_left = 17.0
+offset_top = 230.0
+offset_right = 146.0
+offset_bottom = 253.0
+text = "Time to difficulty increase"
+label_settings = SubResource("LabelSettings_mm4ks")
+metadata/_edit_use_anchors_ = true
+
+[node name="InputTimerLabel" type="Label" parent="."]
+offset_left = 31.0
+offset_top = 164.0
+offset_right = 171.0
+offset_bottom = 187.0
+text = "Time left for input"
+label_settings = SubResource("LabelSettings_qdclm")
+metadata/_edit_use_anchors_ = true
+
+[node name="BetweenRoundsLabel" type="Label" parent="."]
+offset_left = 30.0
+offset_top = 164.0
+offset_right = 180.0
+offset_bottom = 187.0
+text = "To next round start"
+label_settings = SubResource("LabelSettings_mas4u")
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -2.08

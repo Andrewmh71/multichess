@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://b03urm62x2kf4"]
+
+[ext_resource type="Script" path="res://Minigames/Asteroids/asteroids_game.gd" id="1_45e6g"]
+[ext_resource type="Script" path="res://Minigames/Asteroids/asteroid_player.gd" id="1_uq6t7"]
+[ext_resource type="Texture2D" uid="uid://bchn2jfanxmce" path="res://Minigames/Asteroids/ship.png" id="2_qolfr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fm8o5"]
+
+[node name="Asteroids" type="Node2D"]
+script = ExtResource("1_45e6g")
+spawn_offset = 100
+asteroid_speed = 45.0
+minigame_size = Vector2(180, 180)
+metadata/_edit_horizontal_guides_ = [-68.0, -105.0, 200.0, -155.0]
+metadata/_edit_vertical_guides_ = [-211.0, 178.0, 180.0]
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 180.0
+offset_bottom = 180.0
+color = Color(0, 0, 0, 1)
+
+[node name="Player" type="Area2D" parent="."]
+position = Vector2(90, 90)
+script = ExtResource("1_uq6t7")
+rotation_speed = 13.0
+shoot_cooldown = 0.3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+scale = Vector2(0.6, 0.6)
+shape = SubResource("RectangleShape2D_fm8o5")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("2_qolfr")

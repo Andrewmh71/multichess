@@ -1,0 +1,90 @@
+[gd_scene load_steps=7 format=3 uid="uid://ct8cnairyd730"]
+
+[ext_resource type="Script" path="res://Game Scripts/Minigames/simon.gd" id="1_a3px4"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_y0sji"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_num26"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mm4ks"]
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_qdclm"]
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_mas4u"]
+font_size = 10
+
+[node name="Simon" type="Node2D"]
+script = ExtResource("1_a3px4")
+
+[node name="SequenceLabel" type="RichTextLabel" parent="."]
+offset_left = -75.0
+offset_top = -77.0
+offset_right = 100.0
+offset_bottom = -52.0
+scroll_active = false
+
+[node name="InputTimerBar" type="ProgressBar" parent="."]
+offset_left = -52.0
+offset_top = 84.0
+offset_right = 52.0
+offset_bottom = 111.0
+
+[node name="DifficultyProgressBar" type="ProgressBar" parent="."]
+offset_left = -51.0
+offset_top = 151.0
+offset_right = 51.0
+offset_bottom = 178.0
+
+[node name="RoundTimer" type="ProgressBar" parent="."]
+offset_left = -49.0
+offset_top = 85.0
+offset_right = 50.0
+offset_bottom = 112.0
+
+[node name="LivesContainer" type="HBoxContainer" parent="."]
+offset_left = -72.0
+offset_top = -115.0
+offset_right = 74.0
+offset_bottom = -75.0
+alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="LivesContainer"]
+position = Vector2(20, 21)
+scale = Vector2(35, 35)
+texture = SubResource("PlaceholderTexture2D_y0sji")
+
+[node name="Sprite2D2" type="Sprite2D" parent="LivesContainer"]
+position = Vector2(72, 21)
+scale = Vector2(35, 35)
+texture = SubResource("PlaceholderTexture2D_num26")
+
+[node name="Sprite2D3" type="Sprite2D" parent="LivesContainer"]
+position = Vector2(127, 21)
+scale = Vector2(35, 35)
+texture = SubResource("PlaceholderTexture2D_num26")
+
+[node name="DifficultyLabel" type="Label" parent="."]
+offset_left = -60.0
+offset_top = 131.0
+offset_right = 69.0
+offset_bottom = 154.0
+text = "Time to difficulty increase"
+label_settings = SubResource("LabelSettings_mm4ks")
+
+[node name="InputTimerLabel" type="Label" parent="."]
+offset_left = -46.0
+offset_top = 65.0
+offset_right = 94.0
+offset_bottom = 88.0
+text = "Time left for input"
+label_settings = SubResource("LabelSettings_qdclm")
+
+[node name="BetweenRoundsLabel" type="Label" parent="."]
+offset_left = -47.0
+offset_top = 65.0
+offset_right = 103.0
+offset_bottom = 88.0
+text = "To next round start"
+label_settings = SubResource("LabelSettings_mas4u")

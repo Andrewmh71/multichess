@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://cevgcl8i5687"]
+
+[ext_resource type="Script" path="res://Minigames/Pong/pong.gd" id="1_w2cf7"]
+[ext_resource type="Texture2D" uid="uid://bkidchuh1f4v" path="res://white.png" id="2_t2uym"]
+
+[node name="Pong" type="Node2D"]
+script = ExtResource("1_w2cf7")
+
+[node name="Ball" type="Sprite2D" parent="."]
+texture = ExtResource("2_t2uym")
+
+[node name="Paddle" type="Sprite2D" parent="."]
+texture = ExtResource("2_t2uym")
+
+[node name="WallLeft" type="Sprite2D" parent="."]
+texture = ExtResource("2_t2uym")
+
+[node name="WallRight" type="Sprite2D" parent="."]
+texture = ExtResource("2_t2uym")
+
+[node name="WallTop" type="Sprite2D" parent="."]
+texture = ExtResource("2_t2uym")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+offset_right = 180.0
+offset_bottom = 230.0
+color = Color(0, 0, 0, 1)
