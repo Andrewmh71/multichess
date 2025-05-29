@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlncq0kw08qsr"
-path="res://.godot/imported/black_on.png-30255371a74d03981408d6a8a6dac14a.ctex"
+uid="uid://451jm57jou0e"
+path="res://.godot/imported/white_on.png-ececd09702851c0afda43939517cd28c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://black_on.png"
-dest_files=["res://.godot/imported/black_on.png-30255371a74d03981408d6a8a6dac14a.ctex"]
+source_file="res://Games/Chess/white_on.png"
+dest_files=["res://.godot/imported/white_on.png-ececd09702851c0afda43939517cd28c.ctex"]
 
 [params]
 

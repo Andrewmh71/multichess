@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dqypawy0p70ue"]
 
 [ext_resource type="Script" path="res://Minigames/Asteroids/asteroid_bullet.gd" id="1_jag1i"]
-[ext_resource type="Texture2D" uid="uid://bkidchuh1f4v" path="res://white.png" id="2_0u2e7"]
+[ext_resource type="Texture2D" uid="uid://bkidchuh1f4v" path="res://Games/white.png" id="2_0u2e7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4x8nh"]
 size = Vector2(6, 6)
