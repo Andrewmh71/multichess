@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://de3trf4tjakhv"]
+
+[ext_resource type="Script" path="res://Minigames/Flap/pipe.gd" id="1_04s4t"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_gqg72"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0ads"]
+size = Vector2(24, 1)
+
+[node name="PipePair" type="Node2D"]
+script = ExtResource("1_04s4t")
+
+[node name="TopPipe" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="TopPipe"]
+scale = Vector2(24, 1)
+texture = SubResource("PlaceholderTexture2D_gqg72")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopPipe"]
+shape = SubResource("RectangleShape2D_t0ads")
+
+[node name="BottomPipe" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="BottomPipe"]
+scale = Vector2(24, 1)
+texture = SubResource("PlaceholderTexture2D_gqg72")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomPipe"]
+shape = SubResource("RectangleShape2D_t0ads")

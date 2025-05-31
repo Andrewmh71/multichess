@@ -1,7 +1,7 @@
 extends Resource
 class_name Game
 
-var moves = preload("res://Game Scripts/move_logic.gd").new()
+var moves = preload("res://Games/Chess/move_logic.gd").new()
 
 const NORMAL = 0
 const CHECK = 1

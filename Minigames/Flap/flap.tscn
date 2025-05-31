@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://brxu0c4sn25gh"]
+
+[ext_resource type="Script" path="res://Minigames/Flap/bird.gd" id="1_qughx"]
+[ext_resource type="Script" path="res://Minigames/Flap/flap.gd" id="1_wp5ka"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dunx6"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_t8js5"]
+
+[node name="Flap" type="Node2D"]
+script = ExtResource("1_wp5ka")
+
+[node name="Bird" type="CharacterBody2D" parent="."]
+script = ExtResource("1_qughx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bird"]
+shape = SubResource("RectangleShape2D_dunx6")
+
+[node name="Sprite2D" type="Sprite2D" parent="Bird"]
+scale = Vector2(10.72, 10.72)
+texture = SubResource("PlaceholderTexture2D_t8js5")

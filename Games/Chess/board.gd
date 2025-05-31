@@ -32,10 +32,10 @@ var turn_label : Label
 var white_sprite : Sprite2D
 var black_sprite : Sprite2D
 
-const white_spr_on = preload("res://white_on.png")
-const white_spr_off = preload("res://white_off.png")
-const black_spr_on = preload("res://black_on.png")
-const black_spr_off = preload("res://black_off.png")
+const white_spr_on = preload("res://Games/Chess/white_on.png")
+const white_spr_off = preload("res://Games/Chess/white_off.png")
+const black_spr_on = preload("res://Games/Chess/black_on.png")
+const black_spr_off = preload("res://Games/Chess/black_off.png")
 
 const p1_selector_tex = preload("res://UI Sprites/selector_red1.png")
 const p2_selector_tex = preload("res://UI Sprites/selector_blue1.png")

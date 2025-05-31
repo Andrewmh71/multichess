@@ -22,6 +22,10 @@ window/size/viewport_height=360
 window/size/mode=2
 window/stretch/mode="viewport"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gdterm/plugin.cfg")
+
 [global_group]
 
 player_bullet="Player bullet for the asteroids minigame"
