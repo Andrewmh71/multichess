@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://brxu0c4sn25gh"]
 
-[ext_resource type="Script" path="res://Minigames/Flap/bird.gd" id="1_qughx"]
-[ext_resource type="Script" path="res://Minigames/Flap/flap.gd" id="1_wp5ka"]
+[ext_resource type="Script" uid="uid://dfcwgusujwe1h" path="res://Minigames/Flap/bird.gd" id="1_qughx"]
+[ext_resource type="Script" uid="uid://bnd3w5qscxnsd" path="res://Minigames/Flap/flap.gd" id="1_wp5ka"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dunx6"]
 

@@ -20,6 +20,6 @@ func start_game(pn):
 
 func get_game_size():
 	return minigame_size
-	
+
 func fail():
 	emit_signal("game_over", player_number)

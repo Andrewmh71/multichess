@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bjdoaqw41yo4d"]
+[gd_scene load_steps=6 format=3 uid="uid://bjdoaqw41yo4d"]
 
-[ext_resource type="Script" path="res://Games/game_manager.gd" id="1_kb1sk"]
-[ext_resource type="Script" path="res://Games/Chess/board.gd" id="1_uqby5"]
+[ext_resource type="Script" uid="uid://dt8154chfdim6" path="res://Games/game_manager.gd" id="1_kb1sk"]
+[ext_resource type="Script" uid="uid://cn5noxtinfpel" path="res://Games/Chess/board.gd" id="1_uqby5"]
 [ext_resource type="Texture2D" uid="uid://451jm57jou0e" path="res://Games/Chess/white_on.png" id="3_rpewn"]
 [ext_resource type="Texture2D" uid="uid://crt4oakbjfs2s" path="res://Games/Chess/black_off.png" id="4_v5114"]
-[ext_resource type="PackedScene" uid="uid://brxu0c4sn25gh" path="res://Minigames/Flap/flap.tscn" id="5_pa8fh"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4lwgq"]
 font_size = 26
@@ -36,6 +35,3 @@ texture = ExtResource("3_rpewn")
 [node name="BlackTurnSprite" type="Sprite2D" parent="."]
 position = Vector2(447, 30)
 texture = ExtResource("4_v5114")
-
-[node name="Flap" parent="." instance=ExtResource("5_pa8fh")]
-position = Vector2(208, 0)

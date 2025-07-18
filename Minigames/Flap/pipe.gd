@@ -1,27 +1,29 @@
 extends Node2D
 
-@export var speed := 120.0
-@export var gap_size := 80.0
-@export var max_gap_offset := 80.0
-@export var bottom_y := 360
+@export var gap_size: float = 100.0
+@export var max_gap_offset: float = 100.0
+@export var screen_height: float = 360.0
+@export var pipe_width: float = 64.0  # Width of pipe, if needed for spacing logic
 
 @onready var top_pipe := $TopPipe
 @onready var bottom_pipe := $BottomPipe
 
 func _ready():
-	var gap_pos = randf_range(-max_gap_offset, max_gap_offset) + bottom_y / 2
+	randomize()
+	var center_y = screen_height / 2
+	var gap_center = center_y + randf_range(-max_gap_offset, max_gap_offset)
 
-	# Calculate positions
-	var top_pos = gap_pos / 2
-	var bottom_pos = gap_pos + gap_size + (bottom_y - (gap_pos + gap_size)) / 2
+	# Bottom pipe starts at the bottom of the screen and scales up to the gap
+	var bottom_height = gap_center - gap_size / 2
+	bottom_pipe.position = Vector2(0, screen_height)
+	bottom_pipe.scale.y = bottom_height / bottom_pipe.get_node("Sprite").texture.get_height()
+	bottom_pipe.scale.x = 1.0  # Ensure horizontal scale is not affected
 
-	# Position pipe bases at correct locations
-	top_pipe.position = Vector2(0, top_pos)
-	bottom_pipe.position = Vector2(0, bottom_pos)
+	# Top pipe starts at the top and scales down to the gap
+	var top_height = screen_height - (gap_center + gap_size / 2)
+	top_pipe.position = Vector2(0, 0)
+	top_pipe.scale.y = top_height / top_pipe.get_node("Sprite").texture.get_height()
+	top_pipe.scale.x = 1.0
 
-	# Scale Y to fill from pipe end to screen edge
-	top_pipe.scale.y = gap_pos
-	bottom_pipe.scale.y = bottom_pos - (gap_pos + gap_size)
-
-func _process(delta):
-	position.x -= speed * delta
+	# Flip top pipe vertically if needed (e.g. so both pipe openings face down)
+	top_pipe.get_node("Sprite").rotation = 180

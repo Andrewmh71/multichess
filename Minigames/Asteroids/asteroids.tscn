@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b03urm62x2kf4"]
 
-[ext_resource type="Script" path="res://Minigames/Asteroids/asteroids_game.gd" id="1_45e6g"]
-[ext_resource type="Script" path="res://Minigames/Asteroids/asteroid_player.gd" id="1_uq6t7"]
+[ext_resource type="Script" uid="uid://de0fg7ay5wj7y" path="res://Minigames/Asteroids/asteroids_game.gd" id="1_45e6g"]
+[ext_resource type="Script" uid="uid://crjtdpjjnod5r" path="res://Minigames/Asteroids/asteroid_player.gd" id="1_uq6t7"]
 [ext_resource type="Texture2D" uid="uid://bchn2jfanxmce" path="res://Minigames/Asteroids/ship.png" id="2_qolfr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fm8o5"]

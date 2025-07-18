@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://hh0swkfs7e86"]
 
-[ext_resource type="Script" path="res://Minigames/Race/car.gd" id="1_7st6b"]
-[ext_resource type="Script" path="res://Minigames/Race/race.gd" id="1_d018d"]
+[ext_resource type="Script" uid="uid://ddt8uikp1fm15" path="res://Minigames/Race/car.gd" id="1_7st6b"]
+[ext_resource type="Script" uid="uid://dgrgvoydnat8w" path="res://Minigames/Race/race.gd" id="1_d018d"]
 [ext_resource type="Texture2D" uid="uid://byvs1cfdgvkhq" path="res://Minigames/Race/car.png" id="2_dvelw"]
 [ext_resource type="Texture2D" uid="uid://bbrlajpyiedrl" path="res://Minigames/Race/track.png" id="4_06klx"]
-[ext_resource type="Script" path="res://Minigames/Race/checkpoint.gd" id="5_jd112"]
+[ext_resource type="Script" uid="uid://crjl4co7ep4rr" path="res://Minigames/Race/checkpoint.gd" id="5_jd112"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7tvh7"]
 friction = 0.37

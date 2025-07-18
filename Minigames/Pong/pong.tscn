@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cevgcl8i5687"]
 
-[ext_resource type="Script" path="res://Minigames/Pong/pong.gd" id="1_w2cf7"]
+[ext_resource type="Script" uid="uid://bxrvxeonk5cir" path="res://Minigames/Pong/pong.gd" id="1_w2cf7"]
 [ext_resource type="Texture2D" uid="uid://bkidchuh1f4v" path="res://Games/white.png" id="2_t2uym"]
 
 [node name="Pong" type="Node2D"]

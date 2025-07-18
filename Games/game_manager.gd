@@ -71,8 +71,8 @@ var player2_games = []
 	#game2.start_game(2)
 
 func _ready():
-	player1_games = [asteroids, race, pong, simon, asteroids, race, pong, simon, asteroids, race, pong, simon, asteroids, race, pong, simon]
-	player2_games = [simon, pong, race, asteroids, asteroids, race, pong, simon, asteroids, race, pong, simon, asteroids, race, pong, simon]
+	player1_games = [race, race, race, race, race, race, race, race, race, race, race, race, race, race]
+	player2_games = [simon, pong, race, asteroids, race, race, race, race, race, race, race, race, race, race, race]
 	
 	# Wait for first frame so get_game_size() works
 	await get_tree().process_frame
@@ -104,7 +104,7 @@ func start_next_game(player):
 
 	var game_scene = game_list[index]
 	var game_instance = game_scene.instantiate()
-	
+
 	add_child(game_instance)
 
 	game_instance.connect("game_over", Callable(self, "on_game_over"))

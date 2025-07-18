@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bsq8u8cl5tayx"]
 
-[ext_resource type="Script" path="res://Minigames/Asteroids/asteroid.gd" id="1_mvk5i"]
+[ext_resource type="Script" uid="uid://qirpp1klmg5x" path="res://Minigames/Asteroids/asteroid.gd" id="1_mvk5i"]
 [ext_resource type="Texture2D" uid="uid://r6ubei1yox80" path="res://Minigames/Asteroids/asteroid_big1.png" id="2_dhei1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xjt4m"]
